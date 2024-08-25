@@ -1,0 +1,405 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Rhodium Libre', serif;
+    background-color: black;
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    opacity: 20%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.logo span {
+    color: rgb(255, 248, 248);
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.navbar {
+    display: flex;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #e87967;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    position: relative;
+}
+
+.navbar img {
+    filter: invert(72%) sepia(71%) saturate(3435%) hue-rotate(341deg) brightness(95%) contrast(94%);
+    width: 30px;
+    height: 30px;
+    align-self: center;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: transparent;
+    transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+    background-color: #e87967;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: #e87967;
+    cursor: pointer;
+}
+
+.carousel-text {
+    color: #e87967;
+    text-align: center;
+    justify-content: end;
+    padding: 20px;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    position: relative; 
+    z-index: 1;
+    margin-top: 100px; 
+}
+
+.carousel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    height: calc(100vh - 220px);
+    cursor: grab;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+    align-items: center;
+}
+
+.carousel-item {
+    flex: 0 0 auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 10px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    width: 300px; 
+    height: 400px; 
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin: 0;
+    color: black;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.card button {
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e87967;
+    color: white;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #cf634e;
+}
+
+
+.card button:hover {
+    background-color: #cf634e;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2em;
+    padding: 0.5em;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carousel-control.prev {
+    left: 0;
+}
+
+.carousel-control.next {
+    right: 0;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+.search input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #e87967;
+    border-radius: 5px;
+    margin-right: 10px;
+    color: white;
+    background-color: black;
+}
+
+.search button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #e87967;
+    border-radius: 5px;
+    background-color: #e87967;
+    color: white;
+    cursor: pointer;
+}
+
+.footer {
+    color: #e87967;
+    text-align: center;
+    padding: 100px;
+    flex-shrink: 0;
+}
+
+footer {
+    color: white;
+    padding: 20px 0;
+    background-color: black;
+    border: #e87967;
+    outline: 2px double #e87967;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.contact, .address {
+    text-align: left;
+}
+
+.social-icons {
+    text-align: center;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: black;
+    }
+
+    .navbar.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .carousel {
+        height: calc(100vh - 160px);
+        overflow-x: auto;
+        
+    }
+
+    .carousel-control.prev {
+        display: none;
+    }
+    
+    .carousel-control.next {
+        display: none;
+    }
+    
+
+    .carousel-inner {
+        flex-wrap: nowrap; 
+        
+    }
+
+    .carousel-item {
+        width: 100%;
+    }
+
+
+    .card {
+        width: 50%; 
+        height: auto;
+    }
+
+    .card
+
+    .footer {
+        padding: 50px;
+    }
+
+    .search input {
+        width: 80%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-section {
+        margin: 10px 0;
+    }
+    .contact, .address, .social-icons {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        height: 30px;
+    }
+
+    .logo span {
+        font-size: 16px;
+    }
+
+    .navbar a {
+        padding: 8px;
+    }
+
+    .carousel-control.prev {
+        display: none;
+    }
+    
+    .carousel-control.next {
+        display: none;
+    }
+
+    .footer {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .search input {
+        width: 70%;
+    }
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.carousel {
+    flex: 1;
+}
+
+.footer {
+    flex-shrink: 0;
+}

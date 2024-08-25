@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamondcut Motors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Home/home.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="header">
+        <a href="#" class="logo">
+            <img src="Logo.png" alt="Diamondcut Motors Logo">
+            <span>Diamondcut Motors</span>
+        </a>
+        <div class="navbar">
+            <a href="#">Home</a>
+            <a href="showroom.html">Showroom</a>
+            <a href="cars.html">Cars</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="login.html"><img src="login/user.png" alt=""></a>
+        </div>
+        <div class="hamburger" onclick="toggleNavbar()">
+            &#9776;
+        </div>
+    </div>
+
+    <div class="carousel-text">
+        Best Seller
+    </div>
+
+
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="Home/home carousel/2023-chevrolet-corvette-stingray-convertible-3lt-z51-307-1665496970.jpg" alt="Image 1">
+                    <div class="card-content">
+                        <h3>Chevrolet Corvette</h3>
+                        <p>2025</p>
+                        <button>Show More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="Home/home carousel/2024-porsche-718-boxster-101-1674591861.jpg" alt="Image 2">
+                    <div class="card-content">
+                        <h3>Porsche 718 Boxster</h3>
+                        <p>2024</p>
+                        <button>Show More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="Home/home carousel/2024-toyota-gr-supra-45th-anniversary-edition-106-648cadc57f6f0.jpg" alt="Image 3">
+                    <div class="card-content">
+                        <h3>Toyota GR Supra</h3>
+                        <p>2024</p>
+                        <button>Show More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="Home/home carousel/2025-bmw-z4-102-65b9899370945.jpg" alt="Image 4">
+                    <div class="card-content">
+                        <h3>BMW Z4</h3>
+                        <p>2025</p>
+                        <button>Show More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="Home/home carousel/porschecayman748.jpg" alt="Image 5">
+                    <div class="card-content">
+                        <h3>Porsche 718 Cayman</h3>
+                        <p>2024</p>
+                        <button>Show More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="Home/home carousel/2024bmwM2.jpg" alt="Image 5">
+                    <div class="card-content">
+                        <h3>BMW M2</h3>
+                        <p>2024</p>
+                        <button>Show More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="Home/home carousel/2024jaguarftype.jpg" alt="Image 5">
+                    <div class="card-content">
+                        <h3>Jaguar F-Type</h3>
+                        <p>2024</p>
+                        <button>Show More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="Home/home carousel/2024lotusemira.jpg" alt="Image 5">
+                    <div class="card-content">
+                        <h3>Lotus Emira</h3>
+                        <p>2024</p>
+                        <button>Show More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="Home/home carousel/2024nissanZ.jpg" alt="Image 5">
+                    <div class="card-content">
+                        <h3>Nissan Z</h3>
+                        <p>2024</p>
+                        <button>Show More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="Home/home carousel/2025mclarenArtura.jpg" alt="Image 5">
+                    <div class="card-content">
+                        <h3>McLaren Artura</h3>
+                        <p>2025</p>
+                        <button>Show More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+        <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+    </div>
+    <div class="search">
+        <input id="searchInput" type="text" placeholder="Search...">
+        <button id="searchButton">Search</button>
+    </div>
+    <div class="footer">
+        <h3>Elevating Every Drive From Classic to Luxe</h3>
+    </div>
+    <script src="Home/home.js"></script>
+</body>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section contact">
+            <p><strong>DiamondCuts Motor Contact List</strong></p>
+            <p><strong>General Inquiries</strong><br>
+            Email: info@diamondcutsmotor.com<br>
+            Phone: +62 21 1234 5678</p>
+            <p><strong>Customer Service</strong><br>
+            Email: support@diamondcutsmotor.com<br>
+            Phone: +62 21 2345 6789<br>
+            Hours: Monday - Friday, 9:00 AM - 6:00 PM (WIB)</p>
+            <p><strong>Sales Department</strong><br>
+            Email: sales@diamondcutsmotor.com<br>
+            Phone: +62 21 3456 7890</p>
+        </div>
+        <div class="footer-section address">
+            <p>Jl. Jend. Sudirman No. 123 <br>
+            Kecamatan Setiabudi, Jakarta Selatan <br>
+            DKI Jakarta 12930 <br>
+            Indonesia</p>
+        </div>
+        <div class="footer-section social-icons">
+            <p>Connect with us on social media!</p>
+            <a href="https://www.facebook.com"><img src="about us/facebook.png" alt="Facebook"></a>
+            <a href="https://www.twitter.com"><img src="about us/twitter.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com"><img src="about us/instagram.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com"><img src="about us/linkedin.png" alt="LinkedIn"></a>
+        </div>
+    </div>
+</footer>
+</html>

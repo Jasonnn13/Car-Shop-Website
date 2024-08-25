@@ -1,0 +1,280 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Rhodium Libre', serif;
+    background-color: black;
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    opacity: 20%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.logo span {
+    color: rgb(255, 248, 248);
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.navbar {
+    display: flex;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #e87967;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    position: relative;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: transparent;
+    transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+    background-color: #e87967;
+}
+
+.navbar img {
+    filter: invert(72%) sepia(71%) saturate(3435%) hue-rotate(341deg) brightness(95%) contrast(94%);
+    width: 30px;
+    height: 30px;
+    align-self: center;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: #e87967;
+    cursor: pointer;
+}
+/* .car {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.car1 {
+    width: 525px;
+    height: 225px;
+    object-fit: cover;
+    margin: 80px;
+
+}
+
+.car2 {
+    width: 525px;
+    height: 225px;
+    object-fit: cover;
+    margin: 80px;
+    transform: scaleX(-1);
+} */
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    margin: auto;
+    padding: 50px;
+}
+
+section {
+    
+    padding: 40px 20px;
+    margin: 20px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white; 
+}
+
+section p {
+    font-size: 16px;
+    color: white; 
+    line-height: 1.6;
+}
+
+section img {
+    width: 80px;
+    filter: invert(100%) brightness(1000%);
+    height: 80px;
+}
+
+
+footer {
+    color: white;
+    padding: 20px 0;
+    background-color: black;
+    border: #e87967;
+    outline: 2px double #e87967;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.contact, .address {
+    text-align: left;
+}
+
+.social-icons {
+    text-align: center;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+    }
+
+    .car1 {
+        width: 35px;
+        height: 15px;
+    }
+    
+    .car2 {
+        width: 35px;
+        height: 15px;
+    }
+    
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: black;
+    }
+
+    .navbar.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .car {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .car1,
+    .car2 {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-section {
+        margin: 10px 0;
+    }
+    .contact, .address, .social-icons {
+        text-align: center;
+    }
+    .search input {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        height: 30px;
+    }
+
+    .logo span {
+        font-size: 16px;
+    }
+
+    .navbar a {
+        padding: 8px;
+    }
+
+    .footer {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.footer {
+    flex-shrink: 0;
+}

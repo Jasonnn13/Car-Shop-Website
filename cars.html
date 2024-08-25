@@ -1,0 +1,209 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Diamondcut Motors</title>
+        <link href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Cars/cars.css">
+    </head>
+    <body>
+
+        <video autoplay muted loop id="background-video">
+            <source src="background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="header">
+            <a href="home.html" class="logo">
+                <img src="Logo.png" alt="Diamondcut Motors Logo">
+                <span>Diamondcut Motors</span>
+            </a>
+            <div class="navbar">
+                <a href="home.html">Home</a>
+                <a href="showroom.html">Showroom</a>
+                <a href="#">Cars</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="login.html"><img src="login/user.png" alt=""></a>
+            </div>
+            <div class="hamburger" onclick="toggleNavbar()">
+                &#9776;
+            </div>
+        </div>
+
+        <div class="search">
+            <input id="searchInput" type="text" placeholder="Search...">
+            <button id="searchButton">Search</button>
+        </div>
+
+    
+
+    <div class="button-container">
+        <button class="btn" id="new-cars-btn" onclick="showNewCars()">New</button>
+        <button class="btn" id="used-cars-btn" onclick="showUsedCars()">Used</button>
+    </div>
+
+    <div id="new-cars-div" class="cars-div">
+        <h2>New Cars</h2>
+        <p>Here are our latest new cars.</p>
+        <div class="container">
+            <div class="card">
+                <img src="Cars/newcar/bmw z4 1.6.jpg" alt="Car01">
+                <h2>BMW Z4</h2>
+                <p>$53,600</p>
+                <button>Show More</button>
+            </div>
+            <div class="card">
+                <img src="Cars/newcar/chevrolet corvette 1.3.jpg" alt="Car02">
+                <h2>Chevrolet Corvette</h2>
+                <p>$86,000</p>
+                <button>Show More</button>  
+            </div>
+            <div class="card">
+                <img src="Cars/newcar/porsche boxster 718 1.15.jpg" alt="Car03">
+                <h2>Porsche 718 Boxster</h2>
+                <p>$70,400</p>
+                <button>Show More</button>
+            </div>
+            <div class="card">
+                <img src="Cars/newcar/porsche cayman 718 1.3.jpg" alt="Car04">
+                <h2>Porsche 718 Cayman</h2>
+                <p>$68,300</p>
+                <button>Show More</button>
+            </div>
+            <div class="card">
+                <img src="Cars/newcar/terios daihatsu 295.jpg" alt="Car05">
+                <h2>Terios Daihatsu</h2>
+                <p>$16,000</p>
+                <button>Show More</button>
+            </div>
+            <div class="card">
+                <img src="Cars/newcar/toyota gr supra 2.2.jpg" alt="Car06">
+                <h2>Toyota GR Supra</h2>
+                <p>$47,535</p>
+                <button>Show More</button>
+            </div>
+            <div class="card">
+                <img src="Cars/newcar/toyota highlander 631.jpeg" alt="Car07">
+                <h2>Toyota Highlander</h2>
+                <p>$45,020</p>
+                <button>Show More</button>
+            </div>
+            <div class="card">
+                <img src="Cars/newcar/mclarenArturaGT4.jpg" alt="Car08">
+                <h2>McLaren Artura GT 4</h2>
+                <p>$237,500</p>
+                <button>Show More</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="used-cars-div" class="cars-div">
+        <h2>Used Cars</h2>
+        <p>Here are our available used cars.</p>
+        <div class="container">
+            <div class="card">
+                <img src="Cars/oldcar/bmw m2 845.png" alt="Car01">
+                <h2>BMW M2</h2>
+                <p>$52,400</p>
+                <button>Show More</button>
+            </div>
+            <div class="card">
+                <img src="Cars/oldcar/chevrolet traverse 470.jpg" alt="Car02">
+                <h2>Checrolet Traverse</h2>
+                <p>$29,140</p>
+                <button>Show More</button>
+            </div>
+            <div class="card">
+                <img src="Cars/oldcar/porsche macan 700.jpg" alt="Car03">
+                <h2>Porsche Macan</h2>
+                <p>$43,400</p>
+                <button>Show More</button>
+            </div>
+            <div class="card">
+                <img src="Cars/oldcar/porsche panamera 4s 600.png" alt="Car04">
+                <h2>Porsche Panamera</h2>
+                <p>$37,200</p>
+                <button>Show More</button>
+            </div>
+            <div class="card">
+                <img src="Cars/oldcar/porsche taycan 1.1.jpg" alt="Car05">
+                <h2>Porsche Taycan</h2>
+                <p>$68,200</p>
+                <button>Show More</button>
+            </div>
+            <div class="card">
+                <img src="Cars/oldcar/toyota camry se 400.jpg" alt="Car06">
+                <h2>Toyota Camry</h2>
+                <p>$24,800</p>
+                <button>Show More</button>
+            </div>
+            <div class="card">
+                <img src="Cars/oldcar/toyota corolla hybrid 450.png" alt="Car07">
+                <h2>Toyota Corolla Hybrid</h2>
+                <p>$27,900</p>
+                <button>Show More</button>
+            </div>
+            <div class="card">
+                <img src="Cars/oldcar/Used-2017-McLaren-570GT.jpg" alt="Car08">
+                <h2>McLaren 570GT</h2>
+                <p>$139,242</p>
+                <button>Show More</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="brand">
+        <h2>Brands</h2>
+    </div>
+
+    <!-- Add nissan, mclaren, lotus to logo carousel -->
+
+    <div class="logos">
+        <div class="logos-slide">
+            <img src="Cars/brand/bmw.png" alt="Brand 1">
+            <img src="Cars/brand/chevrolet.png" alt="Brand 2">
+            <img src="Cars/brand/daihatsu.png" alt="Brand 3">
+            <img src="Cars/brand/porsche.png" alt="Brand 4">
+            <img src="Cars/brand/toyota.png" alt="Brand 5">
+            <img src="Cars/brand/lotus.png" alt="Brand 5">
+            <img src="Cars/brand/mclaren.png" alt="Brand 5">
+            <img src="Cars/brand/nissan.png" alt="Brand 5" style="filter: brightness(0) invert(1);">
+        </div>
+    </div>
+    
+    
+        <script src="cars/cars.js"></script>
+    </body>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section contact">
+                <p><strong>DiamondCuts Motor Contact List</strong></p>
+                <p><strong>General Inquiries</strong><br>
+                Email: info@diamondcutsmotor.com<br>
+                Phone: +62 21 1234 5678</p>
+                <p><strong>Customer Service</strong><br>
+                Email: support@diamondcutsmotor.com<br>
+                Phone: +62 21 2345 6789<br>
+                Hours: Monday - Friday, 9:00 AM - 6:00 PM (WIB)</p>
+                <p><strong>Sales Department</strong><br>
+                Email: sales@diamondcutsmotor.com<br>
+                Phone: +62 21 3456 7890</p>
+            </div>
+            <div class="footer-section address">
+                <p>Jl. Jend. Sudirman No. 123 <br>
+                Kecamatan Setiabudi, Jakarta Selatan <br>
+                DKI Jakarta 12930 <br>
+                Indonesia</p>
+            </div>
+            <div class="footer-section social-icons">
+                <p>Connect with us on social media!</p>
+                <a href="https://www.facebook.com"><img src="about us/facebook.png" alt="Facebook"></a>
+                <a href="https://www.twitter.com"><img src="about us/twitter.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com"><img src="about us/instagram.png" alt="Instagram"></a>
+                <a href="https://www.linkedin.com"><img src="about us/linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
+    </html>

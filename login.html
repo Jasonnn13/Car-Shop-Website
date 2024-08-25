@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamondcut Motors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login/login.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <div class="header">
+        <a href="home.html" class="logo">
+            <img src="Logo.png" alt="Diamondcut Motors Logo">
+            <span>Diamondcut Motors</span>
+        </a>
+        <div class="navbar">
+            <a href="home.html">Home</a>
+            <a href="showroom.html">Showroom</a>
+            <a href="cars.html">Cars</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="#"><img src="login/user.png" alt=""></a>
+        </div>
+        <div class="hamburger" onclick="toggleNavbar()">
+            &#9776;
+        </div>
+    </div>
+
+    <div class="form-container">
+        <form id="signup-form">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+                <span class="error" id="username-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <span class="error" id="email-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone">
+                <span class="error" id="phone-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <span class="error" id="password-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password">
+                <span class="error" id="confirm-password-error"></span>
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="terms" name="terms"> I agree to the terms and services
+                </label>
+                <span class="error" id="terms-error"></span>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+    <script src="login/login.js"></script>
+</body>
+</html>
